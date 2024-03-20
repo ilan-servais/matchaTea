@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 50%;
+    transition: transform 0.5s ease;
+    
+}
+
+.container:hover img {
+    transform: scale(1.2);
+}
+
+.container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px; /* Set a width for the sidebar */
+    position: fixed;
+    z-index: 2;
+    top: 10;
+    left: 0;
+    background-color: burlywood;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-right: 5px;
+    
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fefbfb;
+    display: block;
+    transition: 0.3s;
+    writing-mode: vertical-rl; /* Add this line to make the text vertical */
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+.sidebar a:hover {
+    color: #b8b8b8;
+}
+
+.container{
+    position: relative;
+}
+
+.container button {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    padding: 20px 50px;
+    transform: translate(-50%, -50%);
+    color: rgb(207, 156, 80);
+    font-weight: bold;
+    z-index: 2;
+    border: 2px solid burlywood;
+    background: none;
+    overflow: hidden; /* Add this to hide the moving arrow when it goes outside the button */
+}
+
+.container button::after {
+    content: '→'; /* This is the arrow */
+    position: absolute;
+    left: 75%; /* Make the arrow visible without hover */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    opacity: 1; /* Make the arrow visible */
+}
+
+.container button:hover::after {
+    left: 100%; /* Move the arrow to the right on hover */
+    opacity: 0; /* Make the arrow disappear on hover */
+}
