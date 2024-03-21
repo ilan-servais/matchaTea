@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c4c4c4;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #339933;
+    color: #FFFFFF;
+    padding: 0px;
+    text-align: center;
+    position: fixed; /* Fixe en haut */
+    width: 100%; /* Largeur pleine */
+    z-index: 2; /* Au-dessus de la sidebar */
+  }
+
+.logo-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+}
+
+.contact-text {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #4D4D4D;
+    padding-top: 10%;
+}
+
+.contact-form {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #339933;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #4D4D4D;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3d60c0;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.contact-info,
+.social-links {
+    flex: 1;
+    text-align: center;
+}
+
+.social-links ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links ul li:last-child {
+    margin-right: 0;
+}
+
+/* The sidebar menu */
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Hauteur pleine */
+    width: 160px; /* Largeur de la sidebar */
+    position: fixed; /* Fixe en place */
+    z-index: 1; /* Au-dessous du header */
+    top: 0; /* Alignement en haut */
+    left: 0; /* Alignement à gauche */
+    background-color: #6d5151; /* Couleur de fond noire */
+    overflow-x: hidden; /* Masque le débordement horizontal */
+    padding-top: 20px; /* Espacement en haut */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+}
+
+    /* The navigation menu links */
+.sidenav a {
+    padding: 30%; /* Espacement uniforme en haut et en bas */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 25px;
+    color: #2a7a12;
+    display: block;
+    transform: rotate(270deg); /* Rotation du texte */
+}
+
+    /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+    /* Style page content */
+.main {
+    margin-left: 90px; /* 90px pour le contact-text */
+}
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
