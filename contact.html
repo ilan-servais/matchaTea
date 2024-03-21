@@ -7,48 +7,85 @@
     <link rel="stylesheet" href="contact/matcha3.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-      
+        <div class="logo-cont">
+            <a href="index.html"><img src="images/icons8-matcha-64.png" alt="Logo" class="logo"></a>
+            <h1>Matcha Tea</h1>
+            <a href="profil.html"><img src="images/icons8-gestion-des-clients-64.png" alt="Logo Client" class="logo"></a>
+        </div>
     </header>
     
-    <main>
-      <section class="contact-section">
-          <h2>Get in Touch</h2> <!-- Ajout du titre "Get in Touch" -->
-          <div class="contact-container">
-              <div class="contact-text">
-                  <p>Besoin d'aide ou simplement envie de discuter ? N'hésitez pas à nous contacter ! Nous sommes là pour répondre à vos questions, vous guider et vous aider dans toutes vos démarches. Laissez-nous un message et nous vous répondrons dans les plus brefs délais. Votre satisfaction est notre priorité !</p>
-              </div>
-              <div class="contact-form">
-                  <h2>Nous contacter</h2>
-                  <form action="#" method="post">
-                      <label for="civilite">Civilité :</label>
-                      <select id="civilite" name="civilite">
-                          <option value="mr">M.</option>
-                          <option value="mme">Mme</option>
-                          <option value="mlle">Mlle</option>
-                      </select><br>
-                  
-                      <label for="nom">Nom :</label>
-                      <input type="text" id="nom" name="nom" required><br>
-                  
-                      <label for="prenom">Prénom :</label>
-                      <input type="text" id="prenom" name="prenom" required><br>
-                  
-                      <label for="email">Adresse e-mail :</label>
-                      <input type="email" id="email" name="email" required><br>
-                  
-                      <label for="message">Message :</label><br>
-                      <textarea id="message" name="message" rows="5" required></textarea><br>
-                  
-                      <button type="submit">Envoyer</button>
+        <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    
+    <div class="main">
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p>Besoin d'aide ou simplement envie de discuter ? N'hésitez pas à nous contacter ! Nous sommes là pour répondre à vos questions, vous guider et vous aider dans toutes vos démarches. Laissez-nous un message et nous vous répondrons dans les plus brefs délais. Votre satisfaction est notre priorité !</p>
+                </div>
+                <div class="contact-form">
+                    <h2>Nous contacter</h2>
+                    <form action="#" method="post">
+                        <label for="civilite">Civilité :</label>
+                        <select id="civilite" name="civilite">
+                            <option value="mr">M.</option>
+                            <option value="mme">Mme</option>
+                            <option value="mlle">Mlle</option>
+                        </select><br>
+                    
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required><br>
+                    
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required><br>
+                    
+                        <label for="email">Adresse e-mail :</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="message">Message :</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br>
+                    
+                        <button type="submit">Envoyer</button>
                     </form>
-                  </div>
-              </div>
-          </section>
-      </main>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Vente</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Thanks for stopping by !</h3>
+                <p>Let's keep in touch</p>
+            </div>
+            <div class="contact-info">
+                <h3>Coordonnées</h3>
+                <p>8 rue d'Hozrier</p>
+                <p>13002</p>
+                <p>Marseille</p>
+            </div>
+        </div>
+        <p class="footer-text">La Plateforme</p>
     </footer>
+    
+
 </body>
 </html>
