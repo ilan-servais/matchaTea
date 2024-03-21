@@ -125,7 +125,6 @@ h1 {
 /* Style du footer */
 footer {
     background-color: #35374B; /* Couleur de fond du footer */
-    color: #A1A848; /* Couleur du texte */
     padding: 20px 0; /* Espacement interne en haut et en bas */
     position: fixed; /* Position fixe pour rester au bas de la fenêtre du navigateur */
     left: 0; /* Alignement à gauche */
@@ -146,14 +145,15 @@ footer {
 .footer-box,
 .contact-info {
     text-align: center; /* Centre le texte horizontalement */
-    color: #474641; /* Couleur du texte */
-    background-color: #78A083; /* Couleur de fond des boîtes */
+    color: burlywood; /* Couleur du texte */
+    background-color: #50727B; /* Couleur de fond des boîtes */
     padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
     margin-right: 20px; /* Espacement entre les boîtes */
 }
 
 /* Style du texte du footer */
 .footer-text {
+    color: burlywood;
     margin-top: 20px; /* Espace supplémentaire au-dessus du texte */
 }
 
@@ -179,15 +179,13 @@ footer {
     margin-bottom: 5px; /* Espacement entre chaque élément de liste */
 }
 
-
-
 .footer-navigation ul li a {
-    color: #35374B; /* Couleur des liens */
+    color: burlywood; /* Couleur des liens */
     text-decoration: none; /* Supprime la décoration des liens */
 }
 
 .footer-navigation ul li a:hover {
-    color: #50727B; /* Couleur des liens au survol */
+    color: #35374B; /* Couleur des liens au survol */
 }
 
 .footer-text {
@@ -227,20 +225,4 @@ footer {
     /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #A1A848;
-}
-
-/* Pour rendre la barre latérale réactive */
-@media screen and (max-width: 908px) {
-    .sidenav {
-        white-space: nowrap; /* Empêche le texte de se réarranger */
-        width: 100px; /* Réduire la largeur de la barre latérale */
-    }
-}
-
-/* Pour les écrans de taille maximale de 576 pixels */
-@media screen and (max-width: 576px) {
-    .sidenav {
-        white-space: nowrap; /* Empêche le texte de se réarranger */
-        width: 50px; /* Réduire davantage la largeur de la barre latérale */
-    }
 }
