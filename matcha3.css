@@ -8,7 +8,7 @@ body {
     overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
 }
 
-main, .contact-main, .ventes-main, .commandes {
+main, .ventes-main, .commandes {
     height: 1200px; /* Ajoutez une hauteur fixe */
 }
 
@@ -46,7 +46,6 @@ h1 {
 footer {
     background-color: #35374B; /* Couleur de fond du footer */
     padding: 20px 0; /* Espacement interne en haut et en bas */
-    position: fixed; /* Position fixe pour rester au bas de la fenêtre du navigateur */
     left: 0; /* Alignement à gauche */
     bottom: 0; /* Alignement en bas */
     width: 100%; /* Pleine largeur */
@@ -70,13 +69,6 @@ footer {
     padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
     margin-right: 20px; /* Espacement entre les boîtes */
     border-radius: 5px; /* Ajoute des coins arrondis */
-}
-
-/* Style du texte du footer */
-.footer-text {
-    color: burlywood;
-    margin: 0px -80px; /* Déplace le formulaire vers le bas de 50px */
-
 }
 
 /* Style de la boîte du footer */
@@ -111,8 +103,9 @@ footer {
 }
 
 .footer-text {
+    color: burlywood;
     text-align: center; /* Centre le texte horizontalement */
-    margin-left: 0px; /* Espace supplémentaire au-dessus du texte */
+    margin-left: 160px; /* Décalage vers la droite */
 }
 
 /* Conteneur du logo et du titre */
@@ -123,7 +116,7 @@ footer {
     padding: 0px 10px; /* Espacement interne en haut et en bas */
 }
 
-/* Style du logo */
+/* Style des logos header */
 .logo {
     width: 50px; /* Largeur du logo */
     height: 50px; /* Hauteur du logo */
@@ -142,36 +135,52 @@ footer {
     width: 160px; /* Largeur de la sidebar */
     position: fixed; /* Fixe en place */
     z-index: 1; /* Au-dessous du header */
-    top: 0; /* Alignement en haut */
-    left: 0; /* Alignement à gauche */
     background-color: #50727B; /* Couleur de fond noire */
-    overflow-x: hidden; /* Masque le débordement horizontal */
-    padding-top: 20px; /* Espacement en haut */
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
-    justify-content: center; /* Centrage vertical */
     align-items: center; /* Centrage horizontal */
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 100px; /* Espacement uniforme en haut et en bas */
-    text-decoration: none; /* Pas de soulignement */
+    padding: 160px 10px; /* Réduire l'espacement vertical et horizontal */
+    text-decoration: none;
     font-size: 25px;
     color: #35374B;
-    writing-mode: vertical-lr; /* Définit l'écriture de haut en bas (de droite à gauche) */
+    transform: rotate(270deg); /* Rotation de 180 degrés pour orienter le texte vers le bas */
+    transform-origin: center; /* Centre de rotation */
 }
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #A1A848;
 }
 
+/* Media queries pour la réactivité */
+@media screen and (max-width: 1024px) {
+    .sidenav {
+        width: 100px; /* Ajustez la largeur pour les petits écrans */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 90px; /* Ajustez la largeur pour les petits écrans */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidenav {
+        width: 45px; /* Ajustez la largeur pour les écrans encore plus petits */
+    }
+}
+
 /* CSS page contact.html */
 /*                       */
 /* CSS page contact.html */
 .contact-main {
-    margin-left: 90px; /* 90px pour le contact-text */
+    margin-left: 190px; /* 90px pour le contact-text */
 }
 
 /* Section de contact */
@@ -187,7 +196,6 @@ footer {
 /* Conteneur de la section de contact */
 .contact-container {
     display: flex; /* Utilisation de flexbox */
-    max-width: 1200px; /* Largeur maximale du conteneur */
 }
 
 /* Texte de contact */
