@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commandes - Vente de Thé Matcha</title>
-    <link rel="stylesheet" href="commandes/matcha3.css">
+    <title>Commandes - Matcha Tea</title>
+    <link rel="stylesheet" href="matcha3.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <!-- Entête commun avec des liens de navigation -->
+        <div class="logo-cont">
+            <a href="index.html"><img src="images/icons8-matcha-64.png" alt="Logo" class="logo"></a>
+            <h1>Matcha Tea</h1>
+            <a href="profil.html"><img src="images/icons8-gestion-des-clients-64.png" alt="Logo Client" class="logo"></a>
+        </div>
     </header>
-
+    
+        <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#">Vente</a>
+        <a href="#">Histoire</a>
+        <a href="#">A propos</a>
+        <a href="#">Contact</a>
+    </div>
+    
     <main>
         <section id="commandes">
-            <h1>Suivi de mes commandes</h1>
+            <h1>Suivi des commandes</h1>
             <section id="commandes">
-                <h1>Historique des commandes</h1>
+                <h2>Historique des commandes</h2>
                 <ul>
                     <li>
                         <h2>Commande #123456</h2>
@@ -29,6 +42,12 @@
                         <p>Produits : Thé Matcha Bio x1, Fouet en Bambou</p>
                         <p>Total : 25.00 €</p>
                     </li>
+                    <li>
+                        <h2>Commande #123456</h2>
+                        <p>Date : 2024-03-18</p>
+                        <p>Produits : Thé Matcha Premium x2, Cuillère à Matcha</p>
+                        <p>Total : 45.00 €</p>
+                    </li>
                     <!-- Ajoute d'autres commandes selon les besoins -->
                 </ul>
             </section>
@@ -36,7 +55,30 @@
     </main>
 
     <footer>
-        <!-- Pied de page commun avec des liens de navigation -->
+        <div class="footer-container">
+            <div class="footer-navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Vente</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>Thanks for stopping by !</h4>
+                <p>Let's keep in touch</p>
+            </div>
+            <div class="contact-info">
+                <h4>Coordonnées</h4>
+                <p>8 rue d'Hozrier</p>
+                <p>13002</p>
+                <p>Marseille</p>
+            </div>
+        </div>
+        <p class="footer-text">La Plateforme</p>
     </footer>
+    
 </body>
 </html>
