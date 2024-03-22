@@ -346,14 +346,32 @@ footer {
 .mosaic {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
-    grid-gap: 10px; /* Espacement entre les éléments */
-    padding: 20px;
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    grid-gap: 20px; /* Espacement entre les éléments */
+    padding: 170px; /* Espacement interne */
 }
 
 /* Style des éléments de la mosaïque */
 .mosaic-item {
+    overflow: hidden;
     border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Style des images dans la mosaïque */
+.mosaic-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Effet de survol sur les images */
+.mosaic-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Style du texte et du bouton sous les images */
+.mosaic-item p,
+.mosaic-item button {
+    margin: 10px 0;
+}
