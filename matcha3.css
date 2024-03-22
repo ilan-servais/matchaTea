@@ -1,14 +1,23 @@
-/* Style général du corps de la page */
+/* CSS général Header Sidenav Footer */
 body {
     margin: 0; /* Réinitialise la marge */
     padding: 0; /* Réinitialise le rembourrage */
     background-color: burlywood; /* Couleur de fond du corps */
     color: #000000; /* Couleur du texte */
     font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
+    overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
+
 }
+
+main, .contact-main, .ventes-main {
+    margin-top: -20px; /* Ajoute une marge équivalente à la hauteur du header */
+    height: 1200px; /* Ajoutez une hauteur fixe pour tester */
+}
+
 
 /* Style de l'en-tête */
 header {
+    margin-top: 20px; /* Ajoute une marge équivalente à la hauteur du header */
     font-family: 'Lobster'; /* Police de caractères pour le titre */
     background-color: #35374B; /* Couleur de fond de l'en-tête */
     color: #A1A848; /* Couleur du texte de l'en-tête */
@@ -22,6 +31,79 @@ header {
 /* titre de l'en-tête */
 h1 {
     margin-left: 90px;
+}
+
+/* Style du footer */
+footer {
+    background-color: #35374B; /* Couleur de fond du footer */
+    padding: 20px 0; /* Espacement interne en haut et en bas */
+    position: fixed; /* Position fixe pour rester au bas de la fenêtre du navigateur */
+    left: 0; /* Alignement à gauche */
+    bottom: 0; /* Alignement en bas */
+    width: 100%; /* Pleine largeur */
+}
+
+/* Conteneur du footer */
+.footer-container {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Pour aligner les éléments horizontalement avec un espacement égal entre eux */
+    align-items: center; /* Pour aligner les éléments verticalement */
+    margin-left: 180px; /* Décalage vers la droite */
+}
+
+/* Conteneurs des éléments du footer */
+.footer-navigation,
+.footer-box,
+.contact-info {
+    text-align: center; /* Centre le texte horizontalement */
+    color: burlywood; /* Couleur du texte */
+    background-color: #50727B; /* Couleur de fond des boîtes */
+    padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
+    margin-right: 20px; /* Espacement entre les boîtes */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+/* Style du texte du footer */
+.footer-text {
+    color: burlywood;
+    margin: 0px -80px; /* Déplace le formulaire vers le bas de 50px */
+
+}
+
+/* Style de la boîte du footer */
+.footer-box {
+    flex: 1; /* Expansion de la boîte */
+}
+
+/* Style du titre de navigation du footer */
+.footer-navigation h3 {
+    font-size: 18px; /* Taille de police du titre */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+/* Style de la liste de navigation du footer */
+.footer-navigation ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime le rembourrage par défaut */
+}
+
+/* Style des éléments de la liste de navigation du footer */
+.footer-navigation ul li {
+    margin-bottom: 5px; /* Espacement entre chaque élément de liste */
+}
+
+.footer-navigation ul li a {
+    color: burlywood; /* Couleur des liens */
+    text-decoration: none; /* Supprime la décoration des liens */
+}
+
+.footer-navigation ul li a:hover {
+    color: #35374B; /* Couleur des liens au survol */
+}
+
+.footer-text {
+    text-align: center; /* Centre le texte horizontalement */
+    margin-left: 0px; /* Espace supplémentaire au-dessus du texte */
 }
 
 /* Conteneur du logo et du titre */
@@ -45,8 +127,41 @@ h1 {
     opacity: 0.8; /* Opacité réduite au survol */
 }
 
-/* Style page content */
-.main {
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Hauteur pleine */
+    width: 160px; /* Largeur de la sidebar */
+    position: fixed; /* Fixe en place */
+    z-index: 1; /* Au-dessous du header */
+    top: 0; /* Alignement en haut */
+    left: 0; /* Alignement à gauche */
+    background-color: #50727B; /* Couleur de fond noire */
+    overflow-x: hidden; /* Masque le débordement horizontal */
+    padding-top: 20px; /* Espacement en haut */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 100px; /* Espacement uniforme en haut et en bas */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 25px;
+    color: #35374B;
+    transform: rotate(270deg); /* Rotation du texte */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #A1A848;
+}
+
+/* CSS page contact.html */
+/*                       */
+/* CSS page contact.html */
+.contact-main {
     margin-left: 90px; /* 90px pour le contact-text */
 }
 
@@ -122,107 +237,123 @@ h1 {
     background-color: #4D4D4D; /* Changement de couleur de fond au survol */
 }
 
-/* Style du footer */
-footer {
-    background-color: #35374B; /* Couleur de fond du footer */
-    padding: 20px 0; /* Espacement interne en haut et en bas */
-    position: fixed; /* Position fixe pour rester au bas de la fenêtre du navigateur */
-    left: 0; /* Alignement à gauche */
-    bottom: 0; /* Alignement en bas */
-    width: 100%; /* Pleine largeur */
+/* CSS page profil.html  */
+/*                       */
+/* CSS page profile.html */
+#profil {
+    height: 100vh; /* Utilise la hauteur de la fenêtre */
 }
 
-/* Conteneur du footer */
-.footer-container {
-    display: flex; /* Utilisation de flexbox */
-    justify-content: space-between; /* Pour aligner les éléments horizontalement avec un espacement égal entre eux */
-    align-items: center; /* Pour aligner les éléments verticalement */
-    margin-left: 180px; /* Décalage vers la droite */
+#profil form {
+    width: 300px; /* Ajuste la largeur du formulaire */
+    margin: 150px 45%; /* Déplace le formulaire vers le bas */
 }
 
-/* Conteneurs des éléments du footer */
-.footer-navigation,
-.footer-box,
-.contact-info {
-    text-align: center; /* Centre le texte horizontalement */
-    color: burlywood; /* Couleur du texte */
-    background-color: #50727B; /* Couleur de fond des boîtes */
-    padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
-    margin-right: 20px; /* Espacement entre les boîtes */
+#profil form label {
+    display: block; /* Affiche chaque étiquette sur une nouvelle ligne */
+    margin-bottom: 10px; /* Ajoute un espacement entre les étiquettes */
 }
 
-/* Style du texte du footer */
-.footer-text {
-    color: burlywood;
-    margin-top: 20px; /* Espace supplémentaire au-dessus du texte */
+#profil form input {
+    width: 100%; /* Ajuste la largeur des champs de saisie */
+    padding: 10px; /* Ajoute un espace autour des champs de saisie */
+    margin-bottom: 15px; /* Ajoute un espacement entre les champs de saisie */
 }
 
-/* Style de la boîte du footer */
-.footer-box {
-    flex: 1; /* Expansion de la boîte */
+#profil form button {
+    width: 100%; /* Ajuste la largeur du bouton */
+    padding: 10px; /* Ajoute un espace autour du bouton */
 }
 
-/* Style du titre de navigation du footer */
-.footer-navigation h3 {
-    font-size: 18px; /* Taille de police du titre */
-    margin-bottom: 10px; /* Espacement en bas */
+
+.profile-picture {
+    position: relative;
+    width: 150px; /* Ajuste la taille de la photo de profil */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* Rend la photo de profil ronde */
+    margin: auto; /* Centre la photo de profil horizontalement */
 }
 
-/* Style de la liste de navigation du footer */
-.footer-navigation ul {
-    list-style-type: none; /* Supprime les puces des listes */
-    padding: 0; /* Supprime le rembourrage par défaut */
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Style des éléments de la liste de navigation du footer */
-.footer-navigation ul li {
-    margin-bottom: 5px; /* Espacement entre chaque élément de liste */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Masque l'overlay par défaut */
+    transition: opacity 0.3s ease; /* Animation de transition */
 }
 
-.footer-navigation ul li a {
-    color: burlywood; /* Couleur des liens */
-    text-decoration: none; /* Supprime la décoration des liens */
+.overlay p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.footer-navigation ul li a:hover {
-    color: #35374B; /* Couleur des liens au survol */
+.profile-picture:hover .overlay {
+    opacity: 1; /* Affiche l'overlay au survol */
+    cursor: pointer; /* Change le curseur au survol */
 }
 
-.footer-text {
-    text-align: center; /* Centre le texte horizontalement */
-    margin-left: 0px; /* Espace supplémentaire au-dessus du texte */
+
+/* CSS page commandes.html */
+/*                         */
+/* CSS page commandes.html */
+/* CSS pour la section des commandes */
+#commandes {
+    text-align: center; /* Centre tout le contenu horizontalement */
+    margin-top: 20px; /* Ajoute un espacement en haut */
+    padding: 20px; /* Ajoute un espacement interne */
+    margin-left: 100px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
 }
 
-/* The sidebar menu */
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Hauteur pleine */
-    width: 160px; /* Largeur de la sidebar */
-    position: fixed; /* Fixe en place */
-    z-index: 1; /* Au-dessous du header */
-    top: 0; /* Alignement en haut */
-    left: 0; /* Alignement à gauche */
-    background-color: #50727B; /* Couleur de fond noire */
-    overflow-x: hidden; /* Masque le débordement horizontal */
-    padding-top: 20px; /* Espacement en haut */
-    display: flex; /* Utilisation de flexbox */
-    flex-direction: column; /* Disposition en colonne */
-    justify-content: center; /* Centrage vertical */
-    align-items: center; /* Centrage horizontal */
+/* Style du titre de la section des commandes */
+#commandes h1 {
+    margin-bottom: 20px; /* Ajoute un espacement en bas */
 }
 
-    /* The navigation menu links */
-.sidenav a {
-    padding: 30%; /* Espacement uniforme en haut et en bas */
-    text-decoration: none; /* Pas de soulignement */
-    font-size: 25px;
-    color: #35374B;
-    display: block;
-    transform: rotate(270deg); /* Rotation du texte */
-    word-spacing: 0.5em; /* Espacement entre les mots */
+/* Style de la liste des commandes */
+#commandes ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
 }
 
-    /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #A1A848;
+/* Style des éléments de la liste des commandes */
+#commandes ul li {
+    background-color: #f9f9f9; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    margin-bottom: 10px; /* Ajoute un espacement en bas */
+    padding: 20px; /* Ajoute un espacement interne */
+    text-align: left; /* Alignement du texte à gauche */
 }
+
+/* CSS page vente.html */
+/*                     */
+/* CSS page vente.html */
+/* Style de la mosaïque */
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    grid-gap: 10px; /* Espacement entre les éléments */
+    padding: 20px;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+/* Style des éléments de la mosaïque */
+.mosaic-item {
+    border-radius: 5px;
+}
+
