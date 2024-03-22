@@ -6,22 +6,17 @@ body {
     color: #000000; /* Couleur du texte */
     font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
     overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
-
 }
 
-main, .contact-main, .ventes-main {
-    margin-top: -20px; /* Ajoute une marge équivalente à la hauteur du header */
+main, .contact-main, .ventes-main, .commandes {
     height: 1200px; /* Ajoutez une hauteur fixe pour tester */
 }
 
-
 /* Style de l'en-tête */
 header {
-    margin-top: 20px; /* Ajoute une marge équivalente à la hauteur du header */
     font-family: 'Lobster'; /* Police de caractères pour le titre */
     background-color: #35374B; /* Couleur de fond de l'en-tête */
     color: #A1A848; /* Couleur du texte de l'en-tête */
-    padding: 0px; /* Espacement interne de l'en-tête */
     text-align: center; /* Alignement du texte au centre */
     position: fixed; /* Fixe en haut */
     width: 100%; /* Largeur pleine */
@@ -240,18 +235,37 @@ footer {
 /* CSS page profil.html  */
 /*                       */
 /* CSS page profile.html */
+.main-profil {
+    margin-top: 0; /* Supprimer la marge supérieure */
+}
+
+/* CSS page profil.html */
+/* Style de la section profil */
 #profil {
     height: 100vh; /* Utilise la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Met les éléments en colonne */
 }
 
+/* Style du conteneur du texte et du formulaire */
+#profil .content-container {
+    display: flex; /* Utilise la flexbox */
+    flex-direction: column; /* Met les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    margin-bottom: 20px; /* Ajoute un espace en bas */
+}
+
+/* Style du formulaire dans la section profil */
 #profil form {
     width: 300px; /* Ajuste la largeur du formulaire */
-    margin: 150px 45%; /* Déplace le formulaire vers le bas */
 }
 
-#profil form label {
-    display: block; /* Affiche chaque étiquette sur une nouvelle ligne */
-    margin-bottom: 10px; /* Ajoute un espacement entre les étiquettes */
+/* Style des éléments du formulaire dans la section profil */
+#profil form label,
+#profil form input {
+    margin-bottom: 15px; /* Ajoute un espacement entre les éléments du formulaire */
 }
 
 #profil form input {
@@ -274,7 +288,6 @@ footer {
     border-radius: 50%; /* Rend la photo de profil ronde */
     margin: auto; /* Centre la photo de profil horizontalement */
 }
-
 
 .profile-picture img {
     width: 100%;
@@ -314,7 +327,6 @@ footer {
 /* CSS pour la section des commandes */
 #commandes {
     text-align: center; /* Centre tout le contenu horizontalement */
-    margin-top: 20px; /* Ajoute un espacement en haut */
     padding: 20px; /* Ajoute un espacement interne */
     margin-left: 100px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
 }
