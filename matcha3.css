@@ -2,17 +2,31 @@
 body {
     margin: 0; /* Réinitialise la marge */
     padding: 0; /* Réinitialise le rembourrage */
-    background-color: burlywood; /* Couleur de fond du corps */
+    background-color: #f7e5d7; /* Couleur de fond du corps */
     color: #000000; /* Couleur du texte */
     font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
     overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
 }
 
 main, .contact-main, .ventes-main, .commandes {
-    height: 1200px; /* Ajoutez une hauteur fixe pour tester */
+    height: 1200px; /* Ajoutez une hauteur fixe */
+}
+
+.container {
+    height: 900px; /* Ajoutez une hauteur fixe */
+}
+
+.story {
+    min-height: 300px; /* Hauteur minimale pour assurer la visibilité du contenu */
+    margin-bottom: 15%; /* Marge en bas en pourcentage de la taille de l'écran */
 }
 
 /* Style de l'en-tête */
+@font-face {
+    font-family: "lobster";
+    src: url(font/Lobster-Regular.ttf);
+}
+
 header {
     font-family: 'Lobster'; /* Police de caractères pour le titre */
     background-color: #35374B; /* Couleur de fond de l'en-tête */
@@ -145,7 +159,7 @@ footer {
     text-decoration: none; /* Pas de soulignement */
     font-size: 25px;
     color: #35374B;
-    transform: rotate(270deg); /* Rotation du texte */
+    writing-mode: vertical-lr; /* Définit l'écriture de haut en bas (de droite à gauche) */
 }
 
 /* When you mouse over the navigation links, change their color */
