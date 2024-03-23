@@ -206,6 +206,13 @@ footer {
     padding-top: 10%; /* Espacement en haut */
 }
 
+/* Media queries pour la réactivité */
+@media screen and (min-width: 1024px) {
+    .contact-text {
+    max-width: 600px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
 /* Formulaire de contact */
 .contact-form {
     flex: 1; /* Expansion du formulaire de contact */
