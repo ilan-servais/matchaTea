@@ -240,10 +240,26 @@ footer {
 /* Style des champs de saisie du formulaire */
 .contact-form form input,
 .contact-form form textarea {
-    width: calc(300px - 20px); /* Largeur ajustée */
+    width: calc(100% - 20px); /* Largeur ajustée moins 20 pixels de marge */
     padding: 10px; /* Rembourrage interne */
     margin-bottom: 10px; /* Espacement en bas */
     border: 1px solid #A1A848; /* Bordure */
+}
+
+/* Media query pour ajuster la largeur des champs de saisie pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .contact-form form input,
+    .contact-form form textarea {
+        width: calc(100% - 40px); /* Réduire la largeur des champs de saisie pour les petits écrans */
+    }
+}
+
+/* Media query pour les écrans encore plus petits */
+@media screen and (max-width: 576px) {
+    .contact-form form input,
+    .contact-form form textarea {
+        width: calc(100% - 60px); /* Réduire davantage la largeur des champs de saisie pour les écrans encore plus petits */
+    }
 }
 
 /* Style du bouton d'envoi du formulaire */
@@ -258,7 +274,7 @@ footer {
 
 /* Effet de survol sur le bouton d'envoi */
 .contact-form form button:hover {
-    background-color: #995033; /* Changement de couleur de fond au survol */
+    background-color: #A1A848; /* Changement de couleur de fond au survol */
 }
 
 /* CSS page profil.html  */
