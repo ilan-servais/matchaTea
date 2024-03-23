@@ -406,14 +406,6 @@ footer {
     }
 }
 
-/* Media query pour les écrans encore plus petits */
-@media screen and (max-width: 576px) {
-    .contact-form form input,
-    .contact-form form textarea {
-        width: calc(100% - 60px); /* Réduire davantage la largeur des champs de saisie pour les écrans encore plus petits */
-    }
-}
-
 /* Pour les appareils avec une résolution maximale de 767 pixels */
 @media screen and (max-width: 767px) {
     .contact-form form input,
@@ -442,4 +434,10 @@ footer {
     /* Vos styles CSS ici */
 }
 
-
+/* Media query pour les écrans encore plus petits */
+@media screen and (max-width: 576px) {
+    .contact-form form input,
+    .contact-form form textarea {
+        width: calc(100% - 60px); /* Réduire davantage la largeur des champs de saisie pour les écrans encore plus petits */
+    }
+}
