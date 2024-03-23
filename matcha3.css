@@ -56,7 +56,7 @@ footer {
     display: flex; /* Utilisation de flexbox */
     justify-content: space-between; /* Pour aligner les éléments horizontalement avec un espacement égal entre eux */
     align-items: center; /* Pour aligner les éléments verticalement */
-    margin-left: 180px; /* Décalage vers la droite */
+    margin-left: 10%; /* Décalage vers la droite */
 }
 
 /* Conteneurs des éléments du footer */
@@ -164,26 +164,7 @@ footer {
 /* Media queries pour la réactivité */
 @media screen and (min-width: 1025px) {
     .sidenav {
-        width: 160px; /* Largeur de la sidebar */
-    }
-}
-
-/* Media queries pour la réactivité */
-@media screen and (max-width: 1024px) {
-    .sidenav {
-        width: 100px; /* Ajustez la largeur pour les petits écrans */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sidenav {
-        width: 90px; /* Ajustez la largeur pour les petits écrans */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .sidenav {
-        width: 45px; /* Ajustez la largeur pour les écrans encore plus petits */
+        width: 125px; /* Largeur de la sidebar */
     }
 }
 
