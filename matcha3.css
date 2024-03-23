@@ -3,7 +3,7 @@ body {
     margin: 0; /* Réinitialise la marge */
     padding: 0; /* Réinitialise le rembourrage */
     background-color: #f7e5d7; /* Couleur de fond du corps */
-    color: #000000; /* Couleur du texte */
+    color: #35374B; /* Couleur du texte */
     font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
     overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
     display: flex;
@@ -11,7 +11,7 @@ body {
     min-height: 100vh; /* Au moins la hauteur de la fenêtre visible */
 }
 
-main {
+main, .contact-main {
     flex: 1; /* Fait en sorte que le contenu principal prenne autant d'espace que possible */
 }
 
@@ -243,7 +243,7 @@ footer {
 .contact-form form button {
     margin-top: 20px; /* Espacement en haut */
     padding: 10px 20px; /* Rembourrage interne */
-    background-color: #995033; /* Couleur de fond */
+    background-color: #35374B; /* Couleur de fond */
     color: #FFFFFF; /* Couleur du texte */
     border: none; /* Pas de bordure */
     cursor: pointer; /* Curseur de pointeur */
@@ -251,7 +251,7 @@ footer {
 
 /* Effet de survol sur le bouton d'envoi */
 .contact-form form button:hover {
-    background-color: #4D4D4D; /* Changement de couleur de fond au survol */
+    background-color: #995033; /* Changement de couleur de fond au survol */
 }
 
 /* CSS page profil.html  */
@@ -261,7 +261,6 @@ footer {
     margin-top: 0; /* Supprimer la marge supérieure */
 }
 
-/* CSS page profil.html */
 /* Style de la section profil */
 #profil {
     height: 100vh; /* Utilise la hauteur de la fenêtre */
