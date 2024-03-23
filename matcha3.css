@@ -1,4 +1,4 @@
-/* CSS général Header Sidenav Footer */
+/* CSS général */
 body {
     margin: 0; /* Réinitialise la marge */
     padding: 0; /* Réinitialise le rembourrage */
@@ -132,13 +132,13 @@ footer {
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Hauteur pleine */
-    width: 160px; /* Largeur de la sidebar */
     position: fixed; /* Fixe en place */
     z-index: 3; /* Au-dessous du header */
     background-color: #50727B; /* Couleur de fond noire */
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
     align-items: center; /* Centrage horizontal */
+    overflow-y: auto; /* Ajout de la propriété overflow-y */
 }
 
 /* The navigation menu links */
@@ -148,13 +148,24 @@ footer {
     font-size: 25px;
     color: #35374B;
     transform: rotate(270deg); /* Rotation de 180 degrés pour orienter le texte vers le bas */
-    transform-origin: center; /* Centre de rotation */
 }
 
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #A1A848;
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 0; /* Largeur de la barre de défilement */
+    background: transparent; /* Couleur de fond de la barre de défilement */
+}
+
+/* Media queries pour la réactivité */
+@media screen and (min-width: 1025px) {
+    .sidenav {
+        width: 160px; /* Largeur de la sidebar */
+    }
 }
 
 /* Media queries pour la réactivité */
