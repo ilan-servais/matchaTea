@@ -431,7 +431,9 @@ footer {
   
 /* Pour les appareils avec une résolution minimale de 1600 pixels */
 @media screen and (min-width: 1600px) {
-    /* Vos styles CSS ici */
+    .contact-text {
+        max-width: 600px; /* Définir une largeur maximale pour le texte de contact */
+    }
 }
 
 /* Media query pour les écrans encore plus petits */
