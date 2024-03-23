@@ -224,6 +224,18 @@ footer {
     }
 }
 
+@media screen and (min-width: 576px) {
+    .contact-text {
+    min-width: 300px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .contact-text {
+    min-width: 250px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
 /* Formulaire de contact */
 .contact-form {
     flex: 1; /* Expansion du formulaire de contact */
@@ -374,7 +386,6 @@ footer {
     opacity: 1; /* Affiche l'overlay au survol */
     cursor: pointer; /* Change le curseur au survol */
 }
-
 
 /* CSS page commandes.html */
 /*                         */
