@@ -24,7 +24,7 @@ h1 {
 }
 
 .container img {
-    width: 110%;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 

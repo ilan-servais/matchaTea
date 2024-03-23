@@ -6,14 +6,13 @@ body {
     color: #000000; /* Couleur du texte */
     font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
     overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Au moins la hauteur de la fenêtre visible */
 }
 
-main, .ventes-main, .commandes {
-    height: 1200px; /* Ajoutez une hauteur fixe */
-}
-
-.container {
-    height: 900px; /* Ajoutez une hauteur fixe */
+main {
+    flex: 1; /* Fait en sorte que le contenu principal prenne autant d'espace que possible */
 }
 
 .story {
@@ -34,7 +33,7 @@ header {
     text-align: center; /* Alignement du texte au centre */
     position: fixed; /* Fixe en haut */
     width: 100%; /* Largeur pleine */
-    z-index: 2; /* Au-dessus de la sidebar */
+    z-index: 4; /* Au-dessus de la sidebar */
 }
 
 /* titre de l'en-tête */
@@ -49,6 +48,7 @@ footer {
     left: 0; /* Alignement à gauche */
     bottom: 0; /* Alignement en bas */
     width: 100%; /* Pleine largeur */
+    z-index: 2; /* Donnez au footer un z-index plus élevé */
 }
 
 /* Conteneur du footer */
@@ -134,7 +134,7 @@ footer {
     height: 100%; /* Hauteur pleine */
     width: 160px; /* Largeur de la sidebar */
     position: fixed; /* Fixe en place */
-    z-index: 1; /* Au-dessous du header */
+    z-index: 3; /* Au-dessous du header */
     background-color: #50727B; /* Couleur de fond noire */
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
@@ -180,7 +180,7 @@ footer {
 /*                       */
 /* CSS page contact.html */
 .contact-main {
-    margin-left: 190px; /* 90px pour le contact-text */
+    margin-left: 90px; /* 90px pour le contact-text */
 }
 
 /* Section de contact */
