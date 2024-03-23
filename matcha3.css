@@ -150,6 +150,16 @@ footer {
     transform: rotate(270deg); /* Rotation de 180 degrés pour orienter le texte vers le bas */
 }
 
+/* Empêcher le saut de ligne */
+.sidebar li {
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+/* Ajuster la taille de la police */
+.sidebar li a {
+    font-size: 90%; /* ou une autre valeur appropriée */
+}
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -411,6 +421,9 @@ footer {
     .contact-form form input,
     .contact-form form textarea {
         width: calc(100% - 40px); /* Réduire la largeur des champs de saisie pour les petits écrans */
+    }
+    .sidenav {
+        width: 119px; /* Largeur de la sidebar */
     }
 }
   
