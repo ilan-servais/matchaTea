@@ -9,15 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Au moins la hauteur de la fenêtre visible */
-    
 }
-
 
 main, .contact-main {
     flex: 1; /* Fait en sorte que le contenu principal prenne autant d'espace que possible */
 }
 
-
+.story {
+    min-height: 300px; /* Hauteur minimale pour assurer la visibilité du contenu */
+    margin-bottom: 15%; /* Marge en bas en pourcentage de la taille de l'écran */
+}
 
 /* Style de l'en-tête */
 @font-face {
@@ -131,25 +132,22 @@ footer {
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Hauteur pleine */
-    position: sticky; /* Fixe en place */
+    position: fixed; /* Fixe en place */
+    z-index: 3; /* Au-dessous du header */
     background-color: #50727B; /* Couleur de fond noire */
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
     align-items: center; /* Centrage horizontal */
-    z-index: 3; /* Au-dessus du contenu principal */
+    overflow-y: auto; /* Ajout de la propriété overflow-y */
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 40px 10px; /* Réduire l'espacement vertical et horizontal */
+    padding: 110px 10px; /* Réduire l'espacement vertical et horizontal */
     text-decoration: none;
     font-size: 25px;
     color: #35374B;
-    writing-mode: vertical-rl; /* Écriture verticale */
-}
-
-.sidenav :first-child {
-    padding-top: 110px; /* Espacement en haut */
+    transform: rotate(270deg); /* Rotation de 180 degrés pour orienter le texte vers le bas */
 }
 
 /* Empêcher le saut de ligne */
@@ -168,7 +166,10 @@ footer {
     color: #A1A848;
 }
 
-
+.sidenav::-webkit-scrollbar {
+    width: 0; /* Largeur de la barre de défilement */
+    background: transparent; /* Couleur de fond de la barre de défilement */
+}
 
 /* CSS page contact.html */
 /*                       */
