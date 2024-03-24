@@ -1,0 +1,27 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-left: 100px; /* Décale le contenu de main vers la droite */
+    margin-bottom: 0; /* Marge en bas en pourcentage de la taille de l'écran */
+    padding: 90px;
+}
+
+.equipe {
+    flex: 1 1 300px;
+    max-width: 350px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 450px; /* Limite la hauteur maximale des équipes */
+
+}
+
+.equipe img {
+    width: 60%; /* Pour s'assurer que l'image s'adapte à la largeur de la boîte */
+    height: auto; /* Pour conserver les proportions de l'image */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
