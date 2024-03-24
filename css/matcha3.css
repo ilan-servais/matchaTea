@@ -43,7 +43,7 @@ h1 {
 
 /* Style du footer */
 footer {
-    background-color: #35374B; /* Couleur de fond du footer */
+    background-color: #35374B;  /*Couleur de fond du footer*/
     padding: 20px 0; /* Espacement interne en haut et en bas */
     left: 0; /* Alignement à gauche */
     bottom: 0; /* Alignement en bas */
@@ -65,10 +65,14 @@ footer {
 .contact-info {
     text-align: center; /* Centre le texte horizontalement */
     color: burlywood; /* Couleur du texte */
-    background-color: #50727B; /* Couleur de fond des boîtes */
     padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
     margin-right: 20px; /* Espacement entre les boîtes */
     border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+.footer-navigation,
+.contact-info :first-child {
+    color: #FFFFFF; /* met le premier enfant des deux div en blanc*/
 }
 
 /* Style de la boîte du footer */
