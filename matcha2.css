@@ -16,7 +16,7 @@ h1 {
 }
 
 .container {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,19 +24,17 @@ h1 {
 }
 
 .container img {
-    width: 100%;
-    transition: transform 0.5s ease;
-}
-
-.container:hover img {
-    transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 
 .container button {
     position: absolute;
-    top: 85%;
-    left: 35%;
+    top: 90%;
+    left: 27%;
     padding: 20px 50px;
     transform: translate(-50%, -50%);
     color: rgb(207, 156, 80);
@@ -66,8 +64,7 @@ h1 {
     
     .container button {
         top: 87%;
-        left: 37%;
-        padding: 20px 35px;
+        left: 27%;
     }
 
     .container button::after {
@@ -84,12 +81,14 @@ h1 {
 @media screen and (max-width: 833px) {
     
     .container img{
+        padding-top: 220px;
+        padding-left: 120px;
         width: 70%;
     }
     
     .container button {
-        top: 87%;
-        left: 30%;
+        top: 90%;
+        left: 40%;
         padding: 15px 33px;
     }
 
@@ -97,42 +96,34 @@ h1 {
 
 @media screen and (max-width: 600px) {
     
-    .container img{
-        width: 80%;
-    }
+    
     
     .container button {
-        top: 87%;
-        left: 30%;
-        padding: 15px 33px;
+        top: 93%;
+        left: 40%;
+        padding: 12px 30px;
     }
 
 }
 
 @media screen and (max-width: 420px) {
     
-    .container img{
-        width: 90%;
-    }
     
     .container button {
-        top: 87%;
-        left: 27%;
-        padding: 12px 33px;
+        top: 93%;
+        left: 54%;
+        padding: 10px 29px;
     }
 
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 350px) {
     
-    .container img{
-        width: 100%;
-    }
     
     .container button {
-        top: 87%;
-        left: 30%;
-        padding: 10px 33px;
+        top: 94%;
+        left: 55%;
+        padding: 7px 29px;
     }
 
 }
@@ -142,6 +133,7 @@ h1 {
 /* CSS for the story page */
 
 .story {
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: center;
