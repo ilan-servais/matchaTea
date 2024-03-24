@@ -23,7 +23,7 @@ main, .contact-main {
 /* Style de l'en-tête */
 @font-face {
     font-family: "lobster";
-    src: url(font/Lobster-Regular.ttf);
+    src: url(/matchaTea/font/Lobster-Regular.ttf);
 }
 
 header {
@@ -143,17 +143,21 @@ footer {
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 110px 10px; /* Réduire l'espacement vertical et horizontal */
-    text-decoration: none;
-    font-size: 25px;
-    color: #35374B;
-    transform: rotate(270deg); /* Rotation de 180 degrés pour orienter le texte vers le bas */
+    padding: 30px 10px; /* Réduire l'espacement vertical et horizontal */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    font-size: 25px; /* Taille de la police */
+    color: #35374B; /* Couleur du texte */
+    writing-mode: vertical-rl; /* mode d'ecriture a la vertical */
+}
+
+.sidenav :first-child {
+    padding-top: 150px; /* Espacement en haut pour le premier élément */
 }
 
 /* Empêcher le saut de ligne */
 .sidebar li {
-    white-space: nowrap;
-    word-break: keep-all;
+    white-space: nowrap; /* Empêcher le saut de ligne */
+    word-break: keep-all; /* Empêcher le saut de ligne */
 }
 
 /* Ajuster la taille de la police */
@@ -293,6 +297,12 @@ footer {
 #profil form button {
     width: 100%; /* Ajuste la largeur du bouton */
     padding: 10px; /* Ajoute un espace autour du bouton */
+    background-color: #35374B; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    cursor: pointer; /* Change le curseur au survol */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+
 }
 
 
@@ -340,25 +350,25 @@ footer {
 /*                         */
 /* CSS page commandes.html */
 /* CSS pour la section des commandes */
-#commandes {
+.commandes {
     text-align: center; /* Centre tout le contenu horizontalement */
     padding: 20px; /* Ajoute un espacement interne */
     margin-left: 100px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
 }
 
 /* Style du titre de la section des commandes */
-#commandes h1 {
+.commandes h1 {
     margin-bottom: 20px; /* Ajoute un espacement en bas */
 }
 
 /* Style de la liste des commandes */
-#commandes ul {
+.commandes ul {
     list-style-type: none; /* Supprime les puces de la liste */
     padding: 0; /* Supprime le padding par défaut */
 }
 
 /* Style des éléments de la liste des commandes */
-#commandes ul li {
+.commandes ul li {
     background-color: #f9f9f9; /* Couleur de fond */
     border: 1px solid #ddd; /* Bordure */
     margin-bottom: 10px; /* Ajoute un espacement en bas */
@@ -372,9 +382,10 @@ footer {
 /* Style de la mosaïque */
 .mosaic {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px; /* Espacement entre les éléments */
-    padding: 170px; /* Espacement interne */
+    padding: 80px; /* Espacement interne */
+    margin-left: 140px; /* Décalage vers la droite */
 }
 
 /* Style des éléments de la mosaïque */
@@ -382,6 +393,10 @@ footer {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Style des images dans la mosaïque */
@@ -401,6 +416,15 @@ footer {
 .mosaic-item p,
 .mosaic-item button {
     margin: 10px 0;
+}
+
+.btn-ajouter {
+    background-color: #35374B;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* En plus */
@@ -455,4 +479,87 @@ footer {
     .contact-form form textarea {
         width: calc(100% - 60px); /* Réduire davantage la largeur des champs de saisie pour les écrans encore plus petits */
     }
+}
+
+@media screen and (max-width: 1180px) {
+    .sidenav {
+        width: 100px; /* Largeur de la sidebar */
+    }
+    
+}
+
+@media screen and (max-width: 980px) {
+    .sidenav {
+        width: 80px; /* Largeur de la sidebar */
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .sidenav {
+        width: 70px; /* Largeur de la sidebar */
+    }
+    
+}
+
+@media screen and (max-width: 660px) {
+    .sidenav {
+        width: 50px; /* Largeur de la sidebar */
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+    .sidenav {
+        width: 30px; /* Largeur de la sidebar */
+    }
+    
+}
+
+@media screen and (max-width: 620px) {
+    
+    .mosaic {
+
+        margin-left: 40px; /* Décalage vers la droite */
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    
+    .mosaic {
+
+        margin-left: 0px; /* Décalage vers la droite */
+        padding-left: 60px; /* Ajoute un espacement à gauche */
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    
+    .mosaic {
+
+        margin-left: 0px; /* Décalage vers la droite */
+        padding-left: 35px; /* Ajoute un espacement à gauche */
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    .commandes {
+        
+        margin-left: 40px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    .commandes {
+        
+        margin-left: 20px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
+    }
+    
 }

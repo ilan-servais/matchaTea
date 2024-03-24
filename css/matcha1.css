@@ -16,7 +16,6 @@ main {
     border-radius: 10px;
     text-align: center;
     max-height: 450px; /* Limite la hauteur maximale des équipes */
-    overflow: auto; /* Ajoute un défilement automatique si le contenu dépasse */
 
 }
 
