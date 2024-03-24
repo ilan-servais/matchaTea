@@ -1,0 +1,457 @@
+/* CSS général */
+body {
+    margin: 0; /* Réinitialise la marge */
+    padding: 0; /* Réinitialise le rembourrage */
+    background-color: #f7e5d7; /* Couleur de fond du corps */
+    color: #35374B; /* Couleur du texte */
+    font-family: 'Lato', sans-serif; /* Police de caractères par défaut */
+    overflow-y: auto; /* Activation du défilement vertical en cas de dépassement */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Au moins la hauteur de la fenêtre visible */
+    
+}
+
+
+main, .contact-main {
+    flex: 1; /* Fait en sorte que le contenu principal prenne autant d'espace que possible */
+}
+
+
+
+/* Style de l'en-tête */
+@font-face {
+    font-family: "lobster";
+    src: url(font/Lobster-Regular.ttf);
+}
+
+header {
+    font-family: 'Lobster'; /* Police de caractères pour le titre */
+    background-color: #35374B; /* Couleur de fond de l'en-tête */
+    color: #A1A848; /* Couleur du texte de l'en-tête */
+    text-align: center; /* Alignement du texte au centre */
+    position: fixed; /* Fixe en haut */
+    width: 100%; /* Largeur pleine */
+    z-index: 4; /* Au-dessus de la sidebar */
+}
+
+/* titre de l'en-tête */
+h1 {
+    margin-left: 90px;
+}
+
+/* Style du footer */
+footer {
+    background-color: #35374B; /* Couleur de fond du footer */
+    padding: 20px 0; /* Espacement interne en haut et en bas */
+    left: 0; /* Alignement à gauche */
+    bottom: 0; /* Alignement en bas */
+    width: 100%; /* Pleine largeur */
+    z-index: 2; /* Donnez au footer un z-index plus élevé */
+}
+
+/* Conteneur du footer */
+.footer-container {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Pour aligner les éléments horizontalement avec un espacement égal entre eux */
+    align-items: center; /* Pour aligner les éléments verticalement */
+    margin-left: 10%; /* Décalage vers la droite */
+}
+
+/* Conteneurs des éléments du footer */
+.footer-navigation,
+.footer-box,
+.contact-info {
+    text-align: center; /* Centre le texte horizontalement */
+    color: burlywood; /* Couleur du texte */
+    background-color: #50727B; /* Couleur de fond des boîtes */
+    padding: 0 10px; /* Ajoute de l'espace de 0 pixels en haut et en bas, 10 pixels à gauche et à droite */
+    margin-right: 20px; /* Espacement entre les boîtes */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+/* Style de la boîte du footer */
+.footer-box {
+    flex: 1; /* Expansion de la boîte */
+}
+
+/* Style du titre de navigation du footer */
+.footer-navigation h3 {
+    font-size: 18px; /* Taille de police du titre */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+/* Style de la liste de navigation du footer */
+.footer-navigation ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime le rembourrage par défaut */
+}
+
+/* Style des éléments de la liste de navigation du footer */
+.footer-navigation ul li {
+    margin-bottom: 5px; /* Espacement entre chaque élément de liste */
+}
+
+.footer-navigation ul li a {
+    color: burlywood; /* Couleur des liens */
+    text-decoration: none; /* Supprime la décoration des liens */
+}
+
+.footer-navigation ul li a:hover {
+    color: #35374B; /* Couleur des liens au survol */
+}
+
+.footer-text {
+    color: burlywood;
+    text-align: center; /* Centre le texte horizontalement */
+    margin-left: 160px; /* Décalage vers la droite */
+}
+
+/* Conteneur du logo et du titre */
+.logo-cont {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: center; /* Alignement vertical */
+    padding: 0px 10px; /* Espacement interne en haut et en bas */
+}
+
+/* Style des logos header */
+.logo {
+    width: 50px; /* Largeur du logo */
+    height: 50px; /* Hauteur du logo */
+    object-fit: cover; /* S'assure que le logo est bien ajusté */
+    cursor: pointer; /* Curseur de pointeur au survol */
+}
+
+/* Effet de survol sur le logo */
+.logo:hover {
+    opacity: 0.8; /* Opacité réduite au survol */
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Hauteur pleine */
+    position: sticky; /* Fixe en place */
+    background-color: #50727B; /* Couleur de fond noire */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrage horizontal */
+    z-index: 3; /* Au-dessus du contenu principal */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 40px 10px; /* Réduire l'espacement vertical et horizontal */
+    text-decoration: none;
+    font-size: 25px;
+    color: #35374B;
+    writing-mode: vertical-rl; /* Écriture verticale */
+}
+
+.sidenav :first-child {
+    padding-top: 110px; /* Espacement en haut */
+}
+
+/* Empêcher le saut de ligne */
+.sidebar li {
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+/* Ajuster la taille de la police */
+.sidebar li a {
+    font-size: 90%; /* ou une autre valeur appropriée */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #A1A848;
+}
+
+
+
+/* CSS page contact.html */
+/*                       */
+/* CSS page contact.html */
+.contact-main {
+    margin-left: 90px; /* 90px pour le contact-text */
+}
+
+/* Section de contact */
+.contact-section {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    padding: 70px; /* Espacement interne de la section de contact */
+    flex-direction: column; /* Disposition en colonne */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Conteneur de la section de contact */
+.contact-container {
+    display: flex; /* Utilisation de flexbox */
+}
+
+/* Texte de contact */
+.contact-text {
+    flex: 1; /* Expansion du texte de contact */
+    padding-right: 20px; /* Espacement à droite */
+    border-right: 1px solid #4D4D4D; /* Bordure de séparation */
+    padding-top: 10%; /* Espacement en haut */
+}
+
+/* Formulaire de contact */
+.contact-form {
+    flex: 1; /* Expansion du formulaire de contact */
+    padding-left: 20px; /* Espacement à gauche */
+}
+
+/* Titre du formulaire */
+.contact-form h2 {
+    margin-top: 0; /* Pas de marge en haut */
+}
+
+/* Style du formulaire */
+.contact-form form {
+    width: 100%; /* Largeur pleine */
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Style des étiquettes du formulaire */
+.contact-form form label {
+    display: block; /* Affichage en bloc */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+/* Style des champs de saisie du formulaire */
+.contact-form form input,
+.contact-form form textarea {
+    width: calc(100% - 20px); /* Largeur ajustée moins 20 pixels de marge */
+    padding: 10px; /* Rembourrage interne */
+    margin-bottom: 10px; /* Espacement en bas */
+    border: 1px solid #A1A848; /* Bordure */
+}
+
+/* Style du bouton d'envoi du formulaire */
+.contact-form form button {
+    margin-top: 20px; /* Espacement en haut */
+    padding: 10px 20px; /* Rembourrage interne */
+    background-color: #35374B; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de pointeur */
+}
+
+/* Effet de survol sur le bouton d'envoi */
+.contact-form form button:hover {
+    background-color: #A1A848; /* Changement de couleur de fond au survol */
+}
+
+/* CSS page profil.html  */
+/*                       */
+/* CSS page profile.html */
+.main-profil {
+    margin-top: 0; /* Supprimer la marge supérieure */
+}
+
+/* Style de la section profil */
+#profil {
+    height: 100vh; /* Utilise la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Met les éléments en colonne */
+}
+
+/* Style du conteneur du texte et du formulaire */
+#profil .content-container {
+    display: flex; /* Utilise la flexbox */
+    flex-direction: column; /* Met les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    margin-bottom: 20px; /* Ajoute un espace en bas */
+}
+
+/* Style du formulaire dans la section profil */
+#profil form {
+    width: 300px; /* Ajuste la largeur du formulaire */
+}
+
+/* Style des éléments du formulaire dans la section profil */
+#profil form label,
+#profil form input {
+    margin-bottom: 15px; /* Ajoute un espacement entre les éléments du formulaire */
+}
+
+#profil form input {
+    width: 100%; /* Ajuste la largeur des champs de saisie */
+    padding: 10px; /* Ajoute un espace autour des champs de saisie */
+    margin-bottom: 15px; /* Ajoute un espacement entre les champs de saisie */
+}
+
+#profil form button {
+    width: 100%; /* Ajuste la largeur du bouton */
+    padding: 10px; /* Ajoute un espace autour du bouton */
+}
+
+
+.profile-picture {
+    position: relative;
+    width: 150px; /* Ajuste la taille de la photo de profil */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* Rend la photo de profil ronde */
+    margin: auto; /* Centre la photo de profil horizontalement */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Masque l'overlay par défaut */
+    transition: opacity 0.3s ease; /* Animation de transition */
+}
+
+.overlay p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-picture:hover .overlay {
+    opacity: 1; /* Affiche l'overlay au survol */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+/* CSS page commandes.html */
+/*                         */
+/* CSS page commandes.html */
+/* CSS pour la section des commandes */
+#commandes {
+    text-align: center; /* Centre tout le contenu horizontalement */
+    padding: 20px; /* Ajoute un espacement interne */
+    margin-left: 100px; /* Décale la section vers la droite pour laisser de l'espace à la barre latérale */
+}
+
+/* Style du titre de la section des commandes */
+#commandes h1 {
+    margin-bottom: 20px; /* Ajoute un espacement en bas */
+}
+
+/* Style de la liste des commandes */
+#commandes ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+/* Style des éléments de la liste des commandes */
+#commandes ul li {
+    background-color: #f9f9f9; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    margin-bottom: 10px; /* Ajoute un espacement en bas */
+    padding: 20px; /* Ajoute un espacement interne */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* CSS page vente.html */
+/*                     */
+/* CSS page vente.html */
+/* Style de la mosaïque */
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    grid-gap: 20px; /* Espacement entre les éléments */
+    padding: 170px; /* Espacement interne */
+}
+
+/* Style des éléments de la mosaïque */
+.mosaic-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style des images dans la mosaïque */
+.mosaic-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Effet de survol sur les images */
+.mosaic-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Style du texte et du bouton sous les images */
+.mosaic-item p,
+.mosaic-item button {
+    margin: 10px 0;
+}
+
+/* En plus */
+@media screen and (min-width: 360px) {
+    .contact-text {
+    min-width: 90px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .contact-text {
+    min-width: 190px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
+/* Pour les appareils avec une résolution maximale de 767 pixels */
+@media screen and (max-width: 767px) {
+    .contact-form form input,
+    .contact-form form textarea {
+        width: calc(100% - 40px); /* Réduire la largeur des champs de saisie pour les petits écrans */
+    }
+    .sidenav {
+        width: 119px; /* Largeur de la sidebar */
+    }
+}
+  
+/* Pour les appareils avec une résolution minimale de 768 pixels et maximale de 959 pixels */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    /* Vos styles CSS ici */
+}
+  
+/* Pour les appareils avec une résolution minimale de 960 pixels et maximale de 1599 pixels */
+@media screen and (min-width: 960px) and (max-width: 1599px) {
+    .sidenav {
+        width: 125px; /* Largeur de la sidebar */
+    }
+    .contact-text {
+        max-width: 600px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+  
+/* Pour les appareils avec une résolution minimale de 1600 pixels */
+@media screen and (min-width: 1600px) {
+    .contact-text {
+        max-width: 600px; /* Définir une largeur maximale pour le texte de contact */
+    }
+}
+
+/* Media query pour les écrans encore plus petits */
+@media screen and (max-width: 576px) {
+    .contact-form form input,
+    .contact-form form textarea {
+        width: calc(100% - 60px); /* Réduire davantage la largeur des champs de saisie pour les écrans encore plus petits */
+    }
+}

@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\MatchaTea\css\matcha2.css">
-    <title>À Propos de Matcha Tea</title>
+    <link rel="stylesheet" href="matcha2.css">
+    <link rel="stylesheet" href="matcha3.css">
+    <title>À Propos - Matcha Tea</title>
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>Matcha Tea</h1>
+        <div class="logo-cont">
+            <a href="index.html"><img src="images/icons8-matcha-64.png" alt="Logo" class="logo"></a>
+            <h1>Matcha Tea</h1>
+            <a href="profil.html"><img src="images/icons8-gestion-des-clients-64.png" alt="Logo Client" class="logo"></a>
+        </div>
     </header>
-    <nav class="sidebar">
-        <a href="#">Accueil</a>
-        <a href="MatchaTea\html\story.html">Histoire</a>
-        <a href="#">A propos</a>
+    
+        <!-- Side navigation -->
+    <div class="sidenav">
         <a href="#">Vente</a>
+        <a href="#">Histoire</a>
+        <a href="#">A propos</a>
         <a href="#">Contact</a>
-    </nav>
-<main class="story story-main">
+    </div>
+    
+    <main class="story story-main">
     <section class="story-section">
         <h2>À Propos de Matcha Tea</h2>
         <p>Chez Matcha Tea, nous croyons que chaque personne se doit de goûter au plaisir de cette
@@ -80,27 +87,29 @@
 </main>
 
 <footer>
-    <nav>
-         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Vente</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-     <section>
-        <h2>Thanks for stopping by!</h2>
-        <button>Let's keep in touch</button>
-        &copy; La Plateforme_2023
-    </section>
-    <section>
-        <h2>Contact</h2>
-        <p>Coordonnées</p>
-        <p>Rue d'Hozier</p>
-        <p>13002 Marseille</p>
-    </section>
-    <p>&copy; 2024 Matcha Tea. Tous droits réservés.</p>
+    <div class="footer-container">
+        <div class="footer-navigation">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Histoire</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Vente</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Thanks for stopping by !</h4>
+            <p>Let's keep in touch</p>
+        </div>
+        <div class="contact-info">
+            <h4>Coordonnées</h4>
+            <p>8 rue d'Hozrier</p>
+            <p>13002</p>
+            <p>Marseille</p>
+        </div>
+    </div>
+    <p class="footer-text">La Plateforme</p>
 </footer>
 
 </body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Matcha Tea</title>
+    <link rel="stylesheet" href="matcha3.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-cont">
+            <a href="index.html"><img src="images/icons8-matcha-64.png" alt="Logo" class="logo"></a>
+            <h1>Matcha Tea</h1>
+            <a href="profil.html"><img src="images/icons8-gestion-des-clients-64.png" alt="Logo Client" class="logo"></a>
+        </div>
+    </header>
+    
+        <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#">Vente</a>
+        <a href="#">Histoire</a>
+        <a href="#">A propos</a>
+        <a href="#">Contact</a>
+    </div>
+    
+    <div class="contact-main">
+        <section class="contact-section">
+            <h3>Get in Touch</h3>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p>Besoin d'aide ou simplement envie de discuter ? N'hésitez pas à nous contacter ! Nous sommes là pour répondre à vos questions, vous guider et vous aider dans toutes vos démarches. Laissez-nous un message et nous vous répondrons dans les plus brefs délais. Votre satisfaction est notre priorité !</p>
+                </div>
+                <div class="contact-form">
+                    <h2>Nous contacter</h2>
+                    <form action="#" method="post">
+                        <label for="civilite">Civilité :</label>
+                        <select id="civilite" name="civilite">
+                            <option value="mr">M.</option>
+                            <option value="mme">Mme</option>
+                            <option value="mlle">Mlle</option>
+                        </select><br>
+                    
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required><br>
+                    
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required><br>
+                    
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="message">Message :</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br>
+                    
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Vente</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>Thanks for stopping by !</h4>
+                <p>Let's keep in touch</p>
+            </div>
+            <div class="contact-info">
+                <h4>Coordonnées</h4>
+                <p>8 rue d'Hozrier</p>
+                <p>13002</p>
+                <p>Marseille</p>
+            </div>
+        </div>
+        <p class="footer-text">La Plateforme</p>
+    </footer>
+    
+</body>
+</html>
